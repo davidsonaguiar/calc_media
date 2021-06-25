@@ -3,12 +3,14 @@ quantidades_n = int(input("Digite a quatidade de números para média: "))
 x = quantidades_n
 lista = []
 
+
 while quantidades_n > 0:
     quantidades_n -= 1
     ordem = x - quantidades_n
-    n = int(input("Digite o {}º número: ".format(ordem)))
+    n = float(input("Digite o {}º número: ".format(ordem)))
     lista.append(n)
 
 media = sum(lista)/x
 
-print(media)
+print("A média aritmética é: {:.2f}".format(media))
+
